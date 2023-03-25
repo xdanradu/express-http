@@ -1,3 +1,7 @@
 function login() {
-    console.log('hello world 1234');
+    console.log('GET request');
+
+    fetch("http://localhost:3000/students")
+        .then((response) => response.json())
+        .then((data) => console.log(data));
 }
