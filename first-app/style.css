@@ -1,0 +1,27 @@
+body {
+    padding:100px;
+}
+
+.login-button {
+    width: 120px;
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: 1px solid #0d6efd;
+    border-radius: 5px;
+    background-color: #0d6efd;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.login-button:hover {
+    cursor: pointer;
+    background-color: #0a58ca;
+}
