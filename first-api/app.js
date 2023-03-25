@@ -20,6 +20,15 @@ app.get('/students', (req, res) => {
     res.send(students)
 })
 
+app.post('/login', (request, response) => {
+    console.dir(request.body);
+    // check if username and password exist in the DB
+    if (request.body.username === 'admin' && request.body.password === 'nimda') {
+        response.send('OK')
+    }
+    response.send('NOK')
+})
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })
