@@ -1,7 +1,12 @@
-function login() {
-    console.log('GET request');
+async function login() {
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
 
-    fetch("http://localhost:3000/students")
-        .then((response) => response.json())
-        .then((data) => console.log(data));
+
+    axios.post('http://localhost:3000/login', { username: username, password: password }).then(
+        (res) => {
+            console.log(res);
+        }
+    );
+
 }
